@@ -1,0 +1,174 @@
+body,
+html {
+    min-height: 1812px;
+    height: 142%;
+}
+
+.title {
+    color: #545454;
+}
+
+.nav-menu>ul>li>a {
+    color: #545454;
+}
+
+.nav-menu>ul>li>a:hover,
+.active {
+    color: #292929;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.pets {
+    height: 1342px;
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pets-container {
+    width: 1200px;
+    height: 1162px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-container {
+    height: 930px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.navigations {
+    justify-content: space-between;
+    display: flex;
+    width: 340px;
+    height: 52px;
+}
+
+.other {
+    width: 270px;
+    height: 270px;
+}
+
+footer {
+    width: 1280px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+}
+
+footer::after {
+    content: "";
+    background-image: url("../assets/img/noises.png");
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 94%;
+}
+
+.nav-menu {
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 870px) {
+    body {
+        max-height: 2492px;
+        height: 325%;
+    }
+
+    .pets {
+        height: 1733px;
+        align-items: normal;
+
+        .pets-container {
+            height: 1603px;
+            width: 580px;
+            margin: 80px 0 100px 0;
+
+            .card-container {
+                margin: 0;
+                height: 1365px;
+                gap: 30px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .pets {
+        padding-bottom: 50px;
+
+        .pets-container {
+            margin-bottom: 0;
+            height: 1577px;
+            padding-bottom: 27px;
+            width: 100%;
+        }
+    }
+
+    .header-container {
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .pets {
+
+        .pets-container {
+
+            .card-container {
+                justify-content: center;
+            }
+
+            .extra-card-but-later {
+                display: none;
+            }
+
+            h3 {
+                font-size: 25px;
+                line-height: 32.5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 340px) {
+
+    .pets {
+        padding: 0;
+
+        .pets-container {
+            padding-bottom: 20px;
+
+
+            .card-container {
+                padding-bottom: 5px;
+            }
+
+            .navigations {
+                width: 300px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

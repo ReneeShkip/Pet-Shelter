@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy House</title>
+    <link rel="stylesheet" href="styles/style-pets.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/pet.ico">
+    <script src="index.js"></script>
+    <script src="slider.js"></script>
+</head>
+
+<body class="pagePet">
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="index.html">
+                    <h1 class="title"> Cozy House</h1>
+                    <p class="subtitle">Shelter for pets in Boston</p>
+                </a></div>
+            <div class="nav-menu">
+                <div class="header-burger">
+                    <img src="assets/img/vectors/burger-2.svg" alt="burger" class="burger">
+                </div>
+                <ul>
+                    <li><a href="index.html">About the shelter</a></li>
+                    <li class="active">Our pets</li>
+                    <li><a href="index.html#help">Help the shelter</a></li>
+                    <li><a href="#Contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="pets">
+        <div class="pets-container">
+            <h3>Our friends who<br>are looking for a house</h3>
+            <div class="card-container cards-list">
+            </div>
+            <div class="navigations">
+                <button class="appbutton type-2 inactive far-prev">&#60;&#60;</button>
+                <button class="appbutton type-2 inactive prev">&#60;</button>
+                <button class="appbutton type-2 active-button page-number">1</button>
+                <button class="appbutton type-2 next">&#62;</button>
+                <button class="appbutton type-2 far-next">&#62;&#62;</button>
+            </div>
+        </div>
+    </div>
+    <footer id="Contacts">
+        <div class="footer-content">
+            <div class="contacts">
+                <h3>For questions and suggestions</h3>
+                <div class="contacts-info"><a href="mailto:email@shelter.com">
+                        <img src="assets/img/vectors/mail.svg" alt="mail">
+                        <h4>email@shelter.com</h4>
+                    </a></div>
+                <div class="contacts-info"><a href="tel:+136745677554">
+                        <img src="assets/img/vectors/phone.svg" alt="phone">
+                        <h4>+13 674 567 75 54</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="locations">
+                <h3>We are waiting for your visit</h3>
+                <div class="locations-info"><a href="https://www.google.com/maps/place/1+Centre+St,+New+York"
+                        target="_blank">
+                        <img src="assets/img/vectors/pin.svg" alt="pin" class="pin">
+                        <h4>1 Central Street, Boston<br>(entrance from the store)</h4>
+                    </a>
+                </div>
+                <div class="locations-info"><a href="https://www.google.com/maps/place/South+Park" target="_blank">
+                        <img src="assets/img/vectors/pin.svg" alt="pin" class="pin">
+                        <h4>18 South Park, London</h4>
+                    </a>
+                </div>
+            </div>
+            <img src="assets/img/footer-puppy.png" alt="puppy" class="footer-dog">
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="popup">
+            <a class="close">
+                <img src="assets/img/vectors/close.svg" alt="X">
+            </a>
+            <div class="popup-item">
+                <img class="popup-img">
+                <div class="popup-content">
+                    <h3 class="popup-title"></h3>
+                    <h4 class="popup-subtitle">Type - Breed</h4>
+                    <p class="popup-desc">Description</p>
+                    <ul class="popup-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
